@@ -1,0 +1,5 @@
+./aws_signing_helper credential-process \
+    --certificate /var/run/secrets/spiffe.io/tls.crt --private-key /var/run/secrets/spiffe.io/tls.key \
+    --trust-anchor-arn arn:aws:rolesanywhere:us-east-2:228615251467:trust-anchor/d771e9e7-8629-4325-a798-b7ba0dc6bee5 \
+    --profile-arn arn:aws:rolesanywhere:us-east-2:228615251467:profile/cd7d4e13-ea9e-49eb-abb6-4bdfaa3d37da \
+    --role-arn arn:aws:iam::228615251467:role/spiffe_iam_anywhere
